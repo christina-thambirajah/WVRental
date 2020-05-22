@@ -1,0 +1,37 @@
+  
+#form-position{
+margin-left: 300px;
+width:300px;
+align-self: center;
+position: absolute;
+}
+#table-position{
+
+    margin-left:750px;
+    width:600px;
+    margin-top: 0px;
+    align-self: center;
+    position: absolute;
+
+}
+table{
+    font-size: 20px; 
+    line-height: 20px; 
+
+}
+.txtSchedule{
+    font-size: 20px; 
+    line-height: 20px; 
+    width:200px;
+}
+th{
+    font-size: 25px; 
+    line-height: 20px; 
+    font-style: bold;
+    width:100px;
+    height:100px;
+}
+td{
+    width:100px;
+    height:100px;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+    <body>
+        <div id=form-position>
+        <form id="form-customer" >
+            <h3>Customer Sign-Up</h3>
+            <p>Customer ID</p>
+            <input type="text" id="txtID" name ="customerID" class="txtCustomer" [(ngModel)]="customerID" [ngModelOptions]="{standalone:true}">
+            <p>Address</p>
+            <input type="text" id="txtID" name ="address" class="txtCustomer"[(ngModel)]="address" [ngModelOptions]="{standalone:true}">
+            <p>Contact Number</p>
+            <input type="text" id="txtID" name ="contactNo" class="txtCustomer"[(ngModel)]="contactNo" [ngModelOptions]="{standalone:true}">
+            <p>First Name</p>
+            <input type="text" id="txtID" name ="fName" class="txtCustomer"[(ngModel)]="fName" [ngModelOptions]="{standalone:true}">
+            <p>Last Name</p>
+            <input type="text" id="txtID" name ="lName" class="txtCustomer"[(ngModel)]="lName" [ngModelOptions]="{standalone:true}">
+            <p>NIC Number</p>
+            <input type="text" id="txtID" name ="nicNo" class="txtCustomer"[(ngModel)]="nicNo" [ngModelOptions]="{standalone:true}">
+            <br>
+            <br>
+
+            <input  type="Submit" value='Add Schedule' id="Btn" (click)="AddCustomer()">
+            
+
+    </form>
+</div>
+    </body>
+    
+</html>

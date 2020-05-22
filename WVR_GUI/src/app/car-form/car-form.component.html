@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <div id="table-position">
+            <table>
+                <tr>
+                  <th>Plate Number</th>
+                  <th>Make</th>
+                  <th>Model</th>
+                  <th>Colour</th>
+                  <th>Daily Rate</th>
+                  <th>AC</th>
+                  <th>No of Seats</th>
+                </tr>
+                <tr *ngFor="let viewCars of getCars">
+                    <td> {{viewCars.plate_Number}}</td>
+                    <td> {{viewCars.make}}</td>
+                    <td> {{viewCars.model}}</td>
+                    <td> {{viewCars.color}}</td>
+                    <td> {{viewCars.ratePerDay}}</td>
+                    <td> {{viewCars.hasAC}}</td>
+                    <td> {{viewCars.noOfSeats}}</td>
+                </tr>
+            </table>
+        </div>
+        <div id="form-position">
+            <h3>Rent a Car</h3>
+        <form id="form-car-schedule" >
+                <p>booking ID</p>
+                <input type="text" id="txtID" name ="bookingID" class="txtSchedule" [(ngModel)]="bookingID" [ngModelOptions]="{standalone:true}">
+                <p>Licence Plate Number</p>
+                <input type="text" id="txtID" name ="plate_Number" class="txtSchedule"[(ngModel)]="plate_Number" [ngModelOptions]="{standalone:true}">
+                <p>customer ID</p>
+                <input type="text" id="txtID" name ="customerID" class="txtSchedule"[(ngModel)]="customerID" [ngModelOptions]="{standalone:true}">
+                <p>pickup Date</p>
+                <input type="date" id="txtpDate" name ="pickupDate" class="txtSchedule"[ngModel]="pickupDate|date:'yyyy-MM-dd'"(ngModelChange)="pickupDate =$event"[ngModelOptions]="{standalone:true}">
+                <p>Dropoff Date</p>
+                <input type="date" id="txtdDate" name = "dropoffDate" class="txtSchedule"[ngModel]="dropoffDate|date:'yyyy-MM-dd'"(ngModelChange)="dropoffDate =$event"[ngModelOptions]="{standalone:true}">
+               
+            <br>
+            <br>
+
+            <input  type="Submit" value='Book Car' id="Btn" (click)="MakeBooking()">
+        </form>
+        </div>
+        
+    
+    
+</html>
